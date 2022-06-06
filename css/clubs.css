@@ -1,0 +1,189 @@
+.section_clubs_baner {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 48.96%, rgba(0, 0, 0, 0) 100%), url(../img/clubs-baner.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.clubs-link {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.titl-clubs {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 48px;
+    padding: 25px 0 80px;
+}
+
+.clubs-link a {
+    padding: 0 15px;
+}
+
+/* start section_clubs */
+.section_cluds {
+    margin: 45px 0 0px;
+}
+
+.clubs-cities {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.clubs-cities a {
+    background: #F5F7FA;
+    border-radius: 40px;
+    padding: 15px 25px;
+}
+
+.clubs-place {
+    padding-left: 30px;
+}
+
+.club-active {
+    background: #21ABBA !important;
+    color: #fff;
+    border-radius: 40px;
+    padding: 15px 25px;
+    transition: .5s
+}
+
+.clubs .card {
+    text-align: left;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid rgb(243, 243, 243);
+    /* position: relative; */
+}
+
+.clubs .card:hover {
+    border: 5px solid #fff;
+}
+
+.tetx-club {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.geolocation {
+    padding-top: 100px;
+}
+
+.geolocation img {
+    padding: 0 0 0px 15px;
+}
+
+.geolocation span {
+    color: rgba(139, 145, 152, 1);
+    padding-left: 8px;
+}
+
+.clubs .choose {
+    padding-left: 15px;
+    transform: translateY(-50px);
+    transition: .5s;
+    opacity: 0;
+}
+
+.clubs .card:hover .choose {
+    padding: 7px 0 5px 15px;
+    transform: translateY(2px);
+    opacity: 1;
+}
+
+.slide_clubs {
+    position: relative;
+}
+.img img{
+    /* height: 100%; */
+    width: 100%;
+}
+.slide_clubs .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 30;
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+}
+
+.slide_clubs .slick-arrow.slick-prev {
+    left: 10px;
+    background: url(../img/icon/CaretLeft.svg) no-repeat center;
+    background-color: #fff;
+    opacity: 0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    transition: .2s;
+}
+
+.slide_clubs .slick-arrow.slick-next {
+    right: 10px;
+    background: url(../img/icon/CaretRight.svg) no-repeat center;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.slide_clubs:hover .slick-next {
+    opacity: .8;
+}
+
+.slide_clubs:hover .slick-prev {
+    opacity: .8;
+}
+
+/* end section_clubs */
+/* star bag_img */
+
+.bag_img {
+    display: flex;
+    justify-content: center;
+}
+
+/* end bag_img */
+@media(max-width:800px){
+    .section_cluds .clubs{
+        grid-gap: 10px;
+    }
+}
+@media(max-width:576px) {
+    .section_clubs_baner {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url(../img/clubs-baner-mob.png)no-repeat left center;
+        background-size: cover;
+    }
+    .clubs-link,
+    .titl-clubs{
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+    .clubs-link{
+        padding-top: 150px;
+    }
+    .titl-clubs{
+        font-size: 34px;
+        padding-bottom: 40px;
+    }
+    .section_cluds{
+        margin-bottom: 50px;
+    }
+    .bag_img{
+        margin: 50px 0;
+    }
+    .bag_img .div{
+        padding: 0;
+    }
+}
